@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Star Wars App</a>
+        <ul class="nav" id="main-nav">
+            <li class="nav-item">
+                <a class="nav-link" id="characters-link" href="#">Characters</a>
+                <ul id="characters-list" class="list-group d-none mt-2"></ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="planets-link" href="#">Planets</a>
+                <ul id="planets-list" class="list-group d-none mt-2"></ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="transports-link" href="#">Transport</a>
+                <ul id="transports-list" class="list-group d-none mt-2"></ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="modal fade" id="entityModal" tabindex="-1" role="dialog" aria-labelledby="entityModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="entityModalLabel">Entity Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="entityDetails">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
